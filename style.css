@@ -1,0 +1,147 @@
+body{
+    background-color: #222;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.logo h1{
+    margin: 0 auto 30px;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.logo img{
+    height:100px;
+    width: 100px;
+}
+.center{
+    text-align: center;
+}
+#search{
+    background: transparent;
+    border:0px;
+    box-sizing: border-box;
+}
+.content img{
+    height: 16px;
+    width: 16px;
+}
+.logo span{
+    color: aquamarine;
+}
+.content{
+    background-color: #31303000;
+    display: flex;
+    border-radius: 40px;
+    transform: scale(1.5);
+}
+.content input {
+    border-radius: 40px;
+    padding: 5px;
+    background: transparent;
+    border: 0px;
+    outline: none; /* Remove the default input focus outline */
+    transition: background-color 0.3s; /* Add a transition for smooth color change */
+    color: white;
+  }
+  
+  /* Style the .content div when the input is focused */
+  .content:focus-within {
+    border:2px solid ;
+    border-color: white; /* Change the background color to white when focused */
+    opacity: 0.9; /* You can adjust the opacity to your liking */
+  }
+  
+  .content {
+    background-color: #31303094;
+    display: flex;
+    border-radius: 40px;
+    transform: scale(1.2);
+    transition: background-color 0.3s; /* Add a transition for smooth color change */
+  }
+
+/* second page*/
+.second{
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music{
+    width: 90vw;
+    margin: 20px;
+    height:90vh;
+    background-color: #222;
+    border-radius: 40px;
+    overflow-x: scroll;
+    padding: 15px;
+}
+.music::-webkit-scrollbar{
+    display: none;
+}
+.song{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    padding: 6px;
+    background-color:#69636366;
+    border-radius: 20px;
+}
+.song-data{
+    display: flex;
+    padding: 7px;
+}
+.song-artist::-webkit-scrollbar{
+    display: none;
+}
+.song-title::-webkit-scrollbar{
+    display: none;
+}
+.song-title{
+    text-align: left;
+    padding-right: 5px;
+    overflow-y: hidden;
+}
+.song-artist{
+    text-align: right;
+    overflow-y: hidden;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with minimum column width of 200px */
+    gap: 20px; /* Adjust the gap between grid items */
+}
+.controls{
+    bottom: 0;
+}
+.controls img{
+    width: 20px;
+    height: 20px;
+}
+.controls button{
+    background-color: transparent;
+    border: 0px;
+}
+/* Optional: Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .song-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+    }
+}
