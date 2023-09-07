@@ -49,7 +49,7 @@ try {
           <div class="song-artist">${song.artist.name}</div>
           </div>
           <div class='controls'>
-            <button class='play-button' id='play'><img src='/images/play.png'></button>
+            <button class='play-button'><img src='/images/play.png'></button>
           </div>`;
 
           const playButton = songElement.querySelector('.play-button');
