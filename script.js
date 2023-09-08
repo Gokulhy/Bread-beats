@@ -58,11 +58,6 @@ try {
           playButton.addEventListener('click', () => {
         // Check if this audio element is already playing
            if (currentlyPlayingAudio !== audio) {
-          // Pause the currently playing audio, if any
-          if (currentlyPlayingAudio) {
-              currentlyPlayingAudio.pause();
-          }
-
           // Set the audio source to the new song
           audio.src = song.preview;
 
